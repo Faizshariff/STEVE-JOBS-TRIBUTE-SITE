@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ASSETS/CSS/main.css">
+</head>
+<body>
+    <div>
+        <div >
+            <img class="slide" src="ASSETS/IMAGES/img 1.jpg">
+            <img class="slide image" src="ASSETS/IMAGES/img 2.jpg">
+            <img class="slide" src="ASSETS/IMAGES/img 3.jpg">
+        </div>
+    <div class="float"><p id="floattext">
+        STAY HUNGRY STAY FOOLISH
+    </p></div>
+</div>
+    <header>
+        <ul>
+           Steve Jobs: The Man Who Thought Different
+        </ul>
+    </header>
+    <main>      
+        <div id="content">
+            <div class="heading">24 FEB 1955<div class="data">Steven Paul was born in San Francisco, the son of Abdulfattah Jandali and Joanne Schieble. He is quickly adopted by Paul and Clara Jobs</div></div>
+            <div class="heading">1969<p class="data">Steve Jobs meets Steve Wozniak, 5 years older,through a mutual friend. Woz and Steve share a love of electronics, Bob Dylan, and pranks</p></div>           
+            <div class="heading">MARCH 1976<p class="data">Woz and Steve show the early Apple I board at the Homebrew Computer Club</p></div>           
+            <div  class="heading">28 AUG 1976<p class="data">Steve Jobs and Woz show off the Apple I at the Personal Computing Festival in Atlantic City, with help from Dan Kottke</p></div>           
+            <div class="heading">1978<p class="data">At Apple, work starts on the Apple III and the Lisa, while Jef Raskin begins The Book of Macintosh</p></div>           
+            <div class="heading">MAY 1980<p class="data">Apple launches the Apple III, which will prove a disastrous flop</p></div>           
+            <div class="heading">JAN 1983<p class="data">Launch of the Lisa computer. The Lisa team later merges with the Mac team under Steve Jobs's leadership</p></div>           
+            <div class="heading">8 APRIL 1983<p class="data">PepsiCo CEO John Sculley becomes Apple's CEO after having been wooed by Steve Jobs for several months</p></div>           
+            <div class="heading">17 SEP 1985<p class="data">Steve Jobs resigns from Apple and starts NeXT with five other refugees from Apple. Apple announces it will sue NeXT</p></div>           
+            <div class="heading">DEC 1996<p class="data">Apple, which was desperately looking for a modern operating system to buy, eventually buys NeXT for $400 million. Steve Jobs is named "informal adviser" to Apple CEO Gil Amelio</p></div>
+            <div class="heading">6 MAY 1998<p class="data">Steve Jobs introduces Apple's revolutionary iMac at the Flint Center auditorium in Cupertino, 14 years after he had introduced the Macintosh at that same place</p></div>
+            <div class="heading">5 OCT 1999<p class="data">Introduction of the iMac DVs and of iMovie, the first of Apple's first Digital Hub app</p></div>
+            <div class="heading">28 APRIL 2003<p class="data">Apple opens the revolutionary online iTunes Music Store in the US, after negotiating landmark deals with all major music labels</p></div>
+            <div class="heading">15 JAN 2008<p class="data">At Macworld 2008, Steve Jobs introduces MacBook Air, with the tagline 'the world's thinnest notebook'. Three years later, it will come to redefine all of Apple's notebook product line</p></div>
+            <div class="heading">24 AUG 2011<p class="data">Steve Jobs resigns as CEO of Apple, with the words 'I have always said if there ever came a day when I could no longer meet my duties and expectations as Apple's CEO, I would be the first to let you know. Unfortunately, that day has come.' Tim Cook becomes Apple CEO</p></div>
+            <div class="heading">5 OCT 2011<p class="data">Steve Jobs dies at home, surrounded by his family</p></div>
+        </div>
+        </main>
+    <!-- script -->
+    <script>
+        var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("slide");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000);
+}
+    </script>
+</body>
+</html>

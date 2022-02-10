@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap');
+body{
+    width: 100vw;
+    background-color: black;
+    overflow-x: hidden;
+}
+.slide{
+    height: 100vh;
+    width: 100vw;
+    margin: auto;
+    object-fit: cover;
+}
+ul{
+    color: white;
+    background-color: #191919;
+    font-family: rowdies;
+    font: 600;
+    padding: 20px;
+    text-align: center;
+    font-size: xx-large
+}
+.float{
+    position: absolute;
+top: 290px;
+left: 50px;
+}
+#floattext{
+color: white;
+font-size: 110px;
+font-weight: 800px;
+text-shadow: 0 1px 2px black;
+}
+#content{
+color: aliceblue;
+display: grid;
+grid-template-columns: auto auto;
+row-gap: 20px;
+column-gap: 50px;
+justify-content: center;
+align-items: center;
+}
+.heading{
+    border: black 3px solid;
+text-align: center;
+background-color: #191919;
+font-weight: 800;
+font-size: large;
+font-family: rowdies;
+transition: .5s;
+height: 50vh;
+width: 40vw;
+}
+.data{
+font-family: rowdies;
+font-weight: 400;
+color: white;
+
+}
+.heading:hover{
+transform: scale(1.2);
+}
+@media only screen 
+and (min-device-width: 280px) 
+and (max-device-width: 770px) {
+      body{
+          overflow-x: hidden;
+      }
+      #floattext{
+          font-size: 50px;
+      }
+      .heading{
+          height: 75vh;
+      }
+    }
